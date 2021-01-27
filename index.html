@@ -1,84 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- link bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- link fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- link local style -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Container  -->
     <div class="container">
-        <!-- Jumbotron  -->
-        <!-- Search form card -->
-        <div id="search-form-card" class="card">
-            <div class="card-header">
-                Search NYT Articles
+      <!-- Jumbotron  -->
+      <div class="jumbotron p-5">
+        <h1 class="display-4 font-weight-bold text-center">
+          <i class="far fa-newspaper"></i> New York Times Search
+        </h1>
+      </div>
+      <!-- Search form card -->
+      <div id="search-form-card" class="card">
+        <div class="card-header">Search NYT Articles</div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Search Term</label>
+              <input
+                type="text"
+                class="form-control"
+                id="search-input"
+                placeholder="type a search term"
+              />
             </div>
-            <div class="card-body">
-                <form>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Search Term</label>
-                        <input type="text" class="form-control" id="search-input" placeholder="type a search term">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">How many articles?</label>
-                        <select class="form-control" id="article-number-select">
-                          <option>5</option>
-                          <option>10</option>
-                          <option>15</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Search Term</label>
-                        <input type="text" class="form-control" id="start-year-input" placeholder="type a search term">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Search Term</label>
-                        <input type="text" class="form-control" id="end-year-input" placeholder="type a search term">
-                    </div>
-                    <button type="submit" id="search-button" class="btn btn-primary">Search</button>
-                    <button id="clear-button" class="btn btn-primary">Clear Results</button>
-                </form>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">How many articles?</label>
+              <select class="form-control" id="article-number-select">
+                <option>5</option>
+                <option>10</option>
+                <option>15</option>
+              </select>
             </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Search Term</label>
+              <input
+                type="text"
+                class="form-control"
+                id="start-year-input"
+                placeholder="type a search term"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Search Term</label>
+              <input
+                type="text"
+                class="form-control"
+                id="end-year-input"
+                placeholder="type a search term"
+              />
+            </div>
+            <button type="submit" id="search-button" class="btn btn-primary">
+              Search
+            </button>
+            <button id="clear-button" class="btn btn-primary">
+              Clear Results
+            </button>
+          </form>
         </div>
-        <!-- search form  -->
-        <!-- search input  -->
-        <!-- number of articles select  -->
-        <!-- start year input  -->
-        <!-- end year input  -->
-        <!-- search button  -->
-        <!-- clear button  -->
+      </div>
+      <!-- search form  -->
+      <!-- search input  -->
+      <!-- number of articles select  -->
+      <!-- start year input  -->
+      <!-- end year input  -->
+      <!-- search button  -->
+      <!-- clear button  -->
 
-        <!-- Result articles card  -->
-				<div class="card result-card">
-					<div class="card-header result-card-header">
-						Top Articles
-					</div>
-					<div class="card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item">
-								<h5 class="result">
-									<span class="result-number">1</span>
-									<span class="article-title">
-										Aaron Rodgers on Perseverance, Vision and Defying Obstacles
-									</span>
-								</h5>
-								<p class="author">By Charlie Other Guy</p>
-							</li>
-						</ul>
-			
-					</div>
-				</div>
-        <!-- footer  -->
+      <!-- Result articles card  -->
+      <div class="card result-card">
+        <div class="card-header result-card-header">Top Articles</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h5 class="result">
+                <span class="result-number">1</span>
+                <span class="article-title">
+                  Aaron Rodgers on Perseverance, Vision and Defying Obstacles
+                </span>
+              </h5>
+              <p class="author">By Charlie Other Guy</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- footer  -->
     </div>
 
     <script src="assets/js/script.js"></script>
-</body>
-  
+  </body>
 </html>
-
