@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
 
 <head>
     <meta charset="UTF-8" />
@@ -16,6 +15,37 @@
     <div class="container">
         <!-- Jumbotron  -->
         <!-- Search form card -->
+        <div id="search-form-card" class="card">
+            <div class="card-header">
+                Search NYT Articles
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Search Term</label>
+                        <input type="text" class="form-control" id="search-input" placeholder="type a search term">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">How many articles?</label>
+                        <select class="form-control" id="article-number-select">
+                          <option>5</option>
+                          <option>10</option>
+                          <option>15</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Search Term</label>
+                        <input type="text" class="form-control" id="start-year-input" placeholder="type a search term">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Search Term</label>
+                        <input type="text" class="form-control" id="end-year-input" placeholder="type a search term">
+                    </div>
+                    <button type="submit" id="search-button" class="btn btn-primary">Search</button>
+                    <button id="clear-button" class="btn btn-primary">Clear Results</button>
+                </form>
+            </div>
+        </div>
         <!-- search form  -->
         <!-- search input  -->
         <!-- number of articles select  -->
@@ -33,18 +63,3 @@
 </body>
 
 </html>
-=======
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-  </head>
-
-  <body>
-    <h1>NYT Thing</h1>
-    <p>Cool stuff coming.</p>
-    <script src="assets/js/script.js"></script>
-  </body>
-</html>
->>>>>>> main
